@@ -1,0 +1,348 @@
+/*************HERO********************/
+
+.backHero{
+    height: 70vh;
+    width: 100%;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: url(../Fotos/Routes/main.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    display: flex;
+    margin-top: 0;
+    margin-left: 2rem;
+    width: clamp(170px, 18.519vw, 250px);
+    height: clamp(100px, 37.037vw, 180px);
+}
+
+.logo{
+    background-image: url(../Fotos/logo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+}
+
+.heroMessage{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.heroMessage h1 {
+    text-transform: uppercase;
+    height: 100%;
+    font-family: var(--heading-font);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: clamp(2.4rem, 5vw, 3.3rem);
+    line-height: clamp(3.2rem, 6vw, 3.8rem);
+    font-weight: bold;
+}
+
+.giant {
+    font-size: clamp(3rem, 5vw, 4rem);
+}
+
+.nav {    
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+    position: absolute;
+    top:38%;
+    right: 5%;
+}
+
+.nav ul li a{
+
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    text-transform: uppercase; 
+    transition: all 70ms ease-in;
+}
+
+.nav ul li a:hover,
+.nav ul li a:focus {
+    border-bottom: 2px solid rgb(89, 85, 85);
+    color: rgb(89, 85, 85);
+}
+
+.ta {
+    text-align: center;
+    align-self: center !important;
+}
+
+.w80 {
+    width: 80%;
+    height: 100%;
+}
+
+.ma{
+    margin: 0 auto;
+}
+
+.h2sections{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    color : black;
+    height: 5rem;
+}
+
+/* ------------------------ TOURS ------------------------*/
+
+.history {
+    height: 40vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+.history-container {
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.history-img-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    width: 100%;
+    height: 100%
+}
+
+.route-title{
+    padding: 1em 0;
+    width: 100%;
+    background-color: var(--main-background);
+    text-align: center;
+}
+
+.route-title p{
+    color: black;
+    font-weight: 500;
+    width: 85%;
+    margin: auto;
+}
+
+.route-info{
+    text-align: left;
+    padding: 4em 0;
+}
+
+.route-info-title{
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 2.5rem 0rem;
+    font-size: 1.6em;
+    font-weight: 200;
+}
+
+.highlight-cards-container{
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.highlight-card .card-img{
+    aspect-ratio: 1/1;
+    width: 90%;
+    max-width: 520px;
+    margin: auto;
+    margin-bottom: 25px;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.card-content{
+    width: 90%;
+    max-width: 520px;
+    margin: auto;
+}
+
+.highlight-card .card-title{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.route1 .highlight-card:first-child .card-img{
+    background-image: url(../Fotos/Routes/HawaMahal.jpg);
+    transition: transform 0.3s ease;
+}
+.card-img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.route1 .highlight-card:nth-child(2) .card-img{
+    background-image: url(../Fotos/Routes/Udaipur.jpg);
+}
+
+.route1 .highlight-card:last-child .card-img{
+    background-image: url(../Fotos/Routes/jaisalmerFort.jpg);
+}
+
+.route2 .highlight-card:first-child .card-img{
+    background-image: url(../Fotos/Routes/tajMajal.jpeg);
+}
+
+.route2 .highlight-card:nth-child(2) .card-img{
+    background-image: url(../Fotos/Routes/amberFort.jpg);
+}
+
+.route2 .highlight-card:last-child .card-img{
+    background-image: url(../Fotos/Routes/humtomb.jpg);
+}
+
+.route3 .highlight-card:first-child .card-img{
+    background-image: url(../Fotos/Routes/Mamallapuram.jpg);
+}
+
+.route3 .highlight-card:nth-child(2) .card-img{
+    background-image: url(../Fotos/Routes/kachin.jpg);
+}
+
+.route3 .highlight-card:last-child .card-img{
+    background-image: url(../Fotos/Routes/tanjore.jpg);
+}
+
+.route3{
+    padding-bottom: 0;
+}
+
+.route-includes{
+    text-align: center;
+}
+
+/* ------------------------ ENDING IMG/PHRASE ------------------------*/
+
+.containerTapestry{
+    height: 120vh;
+    width: 100%;
+    position: relative;
+}
+
+.endRouteImg{
+    height: 100%;
+    width: 100%;
+    background-image: url(../Fotos/Culture/6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+.endRoutePhrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.endRoutePhrase h2{
+    text-align: center;
+    line-height: 3.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.8rem;
+    font-style: italic;
+    position: absolute;
+    width: 35%;
+}
+
+@media (max-width:768px)  {
+    .endRoutePhrase h2{
+        font-size: 1.4rem;
+        line-height: 3rem;
+        width: 90%;
+    }
+    .endRouteImg {
+        height: 50vh;
+        width: 100%;
+    }
+    .containerTapestry{
+        height: 50vh;
+    }
+    .h2sections{
+        line-height: 3rem;
+
+    }
+    .route-info{
+        padding: 2em;
+    }
+    .history{
+        height: 25vh;
+    }
+    .borderbot {
+        display: block;
+        text-shadow: 1px 1px 1px white;
+        text-align: left;
+    }
+    .substory h5{
+        margin-left: 0rem;
+    }
+    .ml5{
+        margin-left: 0rem !important;
+    }
+    .borderbot::after{
+        width: 27rem;
+        left : 0%;
+        bottom : 95px;
+    }
+    .timeline-title{
+        font-size:1.5em !important ;
+    }
+    .heroMessage {
+        position: absolute;
+        bottom: 13%;
+    }
+}

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/**********RESET AND OTHER PERSONAL CFGS ************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('/Maquetado/fonts/Cinzel-Black.otf') format('opentype');
+    font-weight: 900; 
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('/Maquetado/fonts/Cinzel-Bold.otf') format('opentype');
+    font-weight: 700; 
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('/Maquetado/fonts/Cinzel-Regular.otf') format('opentype');
+    font-weight: 400; 
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Cinzel', sans-serif;
+*/
+
+:root {
+
+    --main-color : linear-gradient(to bottom, #db4242, #da3c3c, #d93635, #d72f2e, #d62827, #d62827, #d62827, #d62827, #d72f2e, #d93635, #da3c3c, #db4242);
+    --main-background : #DB4242;
+    --subtitle-color : #EFDE60;
+    --subfooter-color : #000000;
+    --footer-color : #393732;
+    --primary-color: rgba(66, 160, 219);
+    --secondary-color: rgba(239, 222, 96, 0.69);
+    --heading-font: 'Cinzel', sans-serif;
+    --font-family: 'Montserrat', sans-serif;
+    --size-headsection : clamp(10px, 9.111vw, 100px);
+    --font-cta : clamp(1rem, 1.3875rem, 1.6075rem);    
+    font-size: clamp(1rem, 0.6rem + 0.6vw, 1.25rem);
+    
+}
+
+html,body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth; 
+    line-height: 1.4rem;
+}
+.mauto{
+    margin: 0 auto;
+}
+.mb1{
+    margin-bottom: 1rem;
+}
+.mb2{
+    margin-bottom: 2rem;
+}
+.mb3 {
+    margin-bottom: 3rem;
+}
+.mb5 {
+    margin-bottom: 5rem;
+}
+.ml2{
+    margin-left: 2rem;
+}
+.ml3{
+    margin-left: 3rem;
+}
+.ml5{
+    margin-left: 5rem;
+}
+.ml6{
+    margin-left: 6rem;
+}
+.ml8{
+    margin-left: 8rem;
+}
+.mt2{
+    margin-top: 2rem;
+}
+.mt5{
+    margin-top: 5rem;
+}
+.mt9{
+    margin-top: 9rem;
+}
+.pd5{
+    padding-bottom: 5rem;
+}
+
+.colorBack {
+    background-color: rgba(128, 151, 128, 0.9); 
+}
+
+.colorBack2 {
+    background-color: rgba(135, 179, 150, 0.95);
+}
+.bold{
+    font-weight: bold;
+    color: var(--main-background);
+}
+
+.normal {
+    color:black;
+}
+
+.black{
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.bigblack {
+    font-weight: 900;
+    font-size : clamp(20px, 18.111vw, 180px);
+    color: var(--subtitle-color);
+}
+
+.bigblue {
+    font-weight: 900;
+    font-size : clamp(20px, 18.111vw, 180px);
+    color: var(--primary-color);
+}
+
+.bigred {
+    font-weight: 900;
+    font-size : clamp(20px, 18.111vw, 180px);
+    color: var(--main-background);
+}
+
+span {
+    font-weight: bold;
+}
+
+#p1,
+#p2 {
+    opacity: 1;
+    transition: opacity 1s ease-in-out; 
+}
+
+.fadeIn {
+    opacity: 1;
+}
+
+.active-point {
+    background-color: rgb(239, 222, 96);
+}
+
+.substory h5{
+    color: var(--subtitle-color);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    margin-left: 13rem;
+    position: relative;
+}
+.black h5{
+    color: black;
+}
+.borderbot{
+    position: relative;
+}
+
+.borderbot::after{
+    content: "";
+    position: absolute;
+    width: 40rem;
+    height: 2px;
+    background-color: var(--subtitle-color);
+    bottom:-15px;
+    left:-33%;
+    z-index: 555; 
+}
+
+@media (max-width: 1080px){
+    .substory h5{
+        position: inherit;
+    }
+    .borderbot{
+        display: none;
+    }
+}
+
+@media (max-width: 483px){
+    .publiAerlines{
+        gap:50px;
+        border-bottom: 0px !important;
+    }
+}

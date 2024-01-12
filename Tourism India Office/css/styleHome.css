@@ -1,0 +1,1092 @@
+/*******************HERO********************/
+
+.backHero {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: url(../Fotos/tajmajal2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    display: flex;
+    margin-top: 0;
+    margin-left: 2rem;
+    width: clamp(170px, 18.519vw, 250px);
+    height: clamp(100px, 37.037vw, 180px);
+}
+
+.logo {
+    background-image: url(../Fotos/logo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+}
+
+.heroMessage {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 180px;
+    margin-top: 25rem;
+    margin-left: 10rem;
+}
+
+.heroMessage h1 {
+    text-transform: uppercase;
+    height: 100%;
+    font-family: var(--heading-font);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: clamp(3.2rem, 6vw, 3.8rem);
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .heroMessage {
+        margin-left: 0;
+        width: auto;
+        text-align: center;
+        margin-top: 28rem;
+    }
+    .nav {
+        top:34% !important; 
+        right: 31% !important;
+    }
+}
+
+.giant {
+    font-size: clamp(3rem, 5vw, 4rem);
+}
+
+.nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+    position: absolute;
+    top: 65%;
+    right: 5%;
+}
+
+.nav ul li a {
+
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    transition: all 70ms ease-in;
+}
+
+.nav ul li a:hover,
+.nav ul li a:focus {
+    border-bottom: 2px solid rgb(89, 85, 85);
+    color: rgb(89, 85, 85);
+}
+
+.ta {
+    text-align: center;
+    align-self: center !important;
+}
+
+.w80 {
+    width: 80%;
+    height: 100%;
+}
+
+.ma {
+    margin: 0 auto;
+}
+
+
+/***********************MAIN**********************/
+
+
+.history {
+    height: 150vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+.history-container {
+    background-image: url(../Fotos/Texture/SVG/Recurso\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 89.5%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.history-img-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    flex: 1 1 25%;
+}
+
+.history-img {
+    margin-top: 12rem;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+}
+
+@media (max-width: 768px){
+
+    .historyInf{
+        flex-direction: column;
+        display: none;
+        max-width: 100% !important;
+    }
+    .indiaElement {
+        display: none;
+    }
+
+    .history-img{
+        margin-top: 3rem;
+        text-align: center;
+        margin-left: 0rem;
+        width: 100%;
+    }
+    .timeline{
+        transform: rotate(-90deg);
+        display: flex;
+    }
+    .line {
+        left: 34.5% !important;
+    }
+    .year {
+        transform: rotate(90deg);
+        left : 40%;
+    }
+
+    .year1 {
+        left : 43.5% !important;
+    }
+
+    .year3 {
+        left: 44% !important;
+    }
+
+    .year4{
+        left: 43.8% !important;
+    }
+
+    .mt9{
+        margin-top: 3rem !important;
+    }
+    .mt5{
+        margin-top: 2rem !important;
+    }
+    .textoHeritage{
+        text-align: left !important;
+        margin-bottom: 2rem;
+    }
+    .ml5{
+        margin-left: 0rem !important;
+    }
+    .fotoHistory2{
+        position: inherit;
+    }
+
+    .timeline{
+        flex : 1 0 30% !important;
+    }
+
+    .titulo{
+        margin-bottom: 2rem;
+    }
+    .container {
+        background-color:var(--main-background);
+    }
+
+    .history{
+        background-color:var(--main-background) !important;
+        height: 135vh;
+    }
+
+    .history-container{
+        background-image: none;
+        background-color:var(--main-background);
+    }
+
+    .history-img-container{
+        flex : 1 0 10%;
+    }
+    .pHistoryContainer{
+        width: 100%;
+        flex: 1 0 40% !important;
+    }
+    .textoHistory { 
+        flex: 1 0 30%;
+        margin-bottom: 0rem !important;
+    }
+    .fotoHistory2{
+        display: none;
+    }
+    .h2sections{
+        text-align: center !important;
+        width: 100%;
+    }
+}
+
+.historyInf {
+    flex: 1 1 80%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.timeline {
+    flex: 1 1 10%;
+    height: 50%;
+    width: 100%;
+}
+
+.pHistoryContainer {
+    flex: 3 1 40%;
+    height: 90%;
+    margin-left: 1rem;
+}
+
+.fotoHistory {
+    height: 100%;
+    width: 100%;
+    background-image: url(../Fotos/History/valley.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.fotoHistory2 {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-image: url(../Fotos/History/IndusValley.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    right: -25%;
+}
+
+.textoHistory {
+    flex: 4 1 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.text {
+    width: 80%;
+}
+
+.h2sections {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    font-size: var(--size-headsection);
+    color: white;
+    height: 5rem;
+}
+
+.titulo {
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.titulo::before {
+    content: "";
+    border-top: 2px solid var(--subtitle-color);
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: -35%;
+    transform: translateY(-50%);
+}
+
+.titulo::after {
+    content: "";
+    border-top: 2px solid var(--subtitle-color);
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    right: -35%;
+    transform: translateY(-50%);
+}
+
+
+
+/*********************TIMELINE********************/
+
+.timeline {
+    position: relative;
+    z-index: 0;
+
+}
+
+.line {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 36.5%;
+    width: 2px;
+    background-color: white;
+    transform: translateX(-50%);
+    z-index: 1;
+    height: 100%;
+}
+
+.point {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    position: absolute;
+    cursor: pointer;
+    background-color: #FDF4E7;
+    z-index: 2;
+    transition: all 200ms ease-in-out;
+    left: 30%;
+}
+
+.point:hover,
+.point:focus {
+    background-color: var(--subtitle-color);
+}
+
+.point.active {
+    background-color: var(--secondary-color);
+}
+
+.year {
+    position: absolute;
+    left: 45%;
+    font-size: 1.2rem;
+}
+
+.point1, .year1 {
+    top: 0%;
+}
+
+.point2, .year2 {
+    top: 33%;
+}
+
+.point3, .year3 {
+    top: 66%;
+}
+
+.point4, .year4 {
+    top: 100%;
+}
+
+/**********************CTA************************/
+
+.baseCTA {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.textureDisco {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.dirCTACont {
+    background-color: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .dirCTACont{
+        padding-bottom: 1rem;
+    }
+}
+
+.cuadrado {
+    width: 75%;
+    height: 75%;
+    outline: 3px solid white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.CTARout {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.textCTA {
+
+    color: black;
+    text-align: center;
+    font-size: var(--font-cta);
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 50px;
+}
+
+.ctaGalery {
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    padding: 18px 10px;
+    width: 220px;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    border: 1px solid rgba(0, 0, 0, 0.85);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-left: auto;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: rgba(239, 222, 96, 1);
+}
+
+.directions:first-child {
+    font-weight: 500;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: var(--font-family);
+}
+
+.indiaElement {
+    width: 17%;
+    height: 20%;
+    background-image: url(../Fotos/ElementoDiseño/india-6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 78%;
+    right: 5%;
+    z-index: 5555;
+
+}
+
+/*********************GASTRONOMY********************/
+
+.gastronomy-container {
+
+    height: 150vh;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.gastronomy {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.gastronomy-img-container {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.gastronomy-img {
+
+    margin-top: 8rem;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.gastronomyInf {
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+}
+
+.pGastronomyContainer {
+    height: 100%;
+    flex: 1 1 40%;
+}
+
+.fotoGastronomy {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 25rem;
+    background-image: url(../Fotos/Gastronomia/masaladosa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fotoGastronomy2 {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 25rem;
+    background-image: url(../Fotos/Gastronomia/butter-chicken.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ja {
+    text-align: right;
+}
+
+.fig {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.fig:hover .persiana {
+    transform: translateY(0);
+    cursor: cell;
+}
+
+.persiana {
+    background-color: rgba(255, 255, 255, .7);
+    position: absolute;
+    z-index: 999;
+    padding-bottom: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 250ms ease-in-out;
+    transform: translateY(100%);
+
+}
+
+.fig:hover .persiana {
+    transform: translateY(0);
+    cursor: cell;
+}
+
+.find {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+}
+
+.find:first-child {
+    color: black;
+    border-color: black;
+}
+
+.visible-text {
+    opacity: 1;
+}
+
+.restaurantCTA {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row nowrap;
+    outline: 3px solid white;
+    background-color: var(--primary-color);
+    padding: 2rem;
+}
+
+@media (max-width: 768px){
+
+    .gastronomy-img{
+        width: 100%;
+    }
+
+    .restaurantCTA{
+        margin-top: 0;
+        outline: none;
+        align-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .button{
+        margin: auto;
+    }
+
+    .textCtaRestaurant{
+        margin-top: 1rem !important;
+        font-size: 1.3rem;
+    }
+
+    .textCTARes{
+        text-align: center !important;
+    }
+}
+
+.textCtaRestaurant {
+    margin: 0 auto;
+}
+
+.textCTARes {
+
+    color: white;
+    text-align: left;
+    font-size: var(--font-cta);
+    font-weight: 500;
+    text-shadow: 1px 1px 1px black;
+}
+
+.button h5 {
+    text-align: center;
+    color: white;
+    padding: 0px 7px;
+}
+
+.button h5 {
+    font-weight: 500;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: var(--font-family);
+}
+
+@media (max-width: 768px) {
+    .gastronomy-container {
+        height: auto;
+    }
+
+    .gastronomy {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .gastronomy-img-container {
+        height: 140px;
+    }
+
+    .gastronomyInf {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .gastroText p{
+        margin-bottom: 0px !important;
+        margin-top:10px;
+    }
+
+    .titulo{
+        margin-top: 2rem;
+    }
+
+    .pGastronomyContainer {
+        flex: 1 1 100%;
+        height: 200px;
+        width: 100%;
+    }
+    .textCTA {
+        margin-bottom: 0rem;
+        margin-top: 20px;
+    }
+
+    .fotoGastronomy,
+    .fotoGastronomy2 {
+        padding-bottom: 15rem;
+    }
+
+    .textCtaRestaurant {
+        text-align: center;
+    }
+
+    .button {
+        margin-top: 2.5rem;
+    }
+    .cuadrado {
+        height: auto;
+    }
+}
+
+
+/*********************HERITAGE********************/
+
+.heritage {
+    height: 200vh;
+    width: 100%;
+    background-image: url(../Fotos/Texture/SVG/Recurso\ 3.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    padding-bottom: 10rem;
+}
+
+.heritage-container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.heritageInf {
+    display: flex;
+    width: 100%;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.pHeritageContainer {
+    flex: 3 0 50%;
+    height: 100%;
+}
+
+.fotoHeritage {
+    height: 100%;
+    width: 100%;
+    background-image: url(../Fotos/Culture/holi.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fotoHeritage2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../Fotos/Culture/festivalofLights.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.textoHeritage {
+    flex: 4 1 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+    align-items: center;
+    align-content: center;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.height0 {
+    height: 0;
+}
+
+.confgset {
+    justify-content: center;
+    align-items: baseline;
+}
+
+.persiana a {
+    text-decoration: none;
+}
+
+.textoTitulo a {
+    text-decoration: none;
+}
+
+.textoTitulo {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+}
+
+@media (max-width: 768px) {
+    .heritage {
+        height: auto;
+        padding-bottom: 0rem;
+    }
+
+    .heritage-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .heritageInf {
+        flex-direction: column;
+    }
+
+    .pHeritageContainer,
+    .textoHeritage {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+    .mt2 {
+        margin-top: 0rem;
+    }
+
+    .fotoHeritage,
+    .fotoHeritage2 {
+        height: 300px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .button {
+        margin-top: 1.5rem;
+    }
+
+    .ml6{
+        margin-left: 0 !important;
+        text-align: left;
+    }
+
+    .reorder .textoHistory{
+        order: 2;
+    }
+    .reorder .pGastronomyContainer{
+        order: 1;
+    }
+
+    .reorder{
+        margin-top: 0rem !important;
+    }
+
+    .ja{
+        text-align: left;
+    }
+    .textoTitulo{
+        margin-bottom: 2rem;
+    }
+}
+
+
+/********************DISCOVER*******************/
+
+.discoSize {
+    height: 150vh;
+}
+
+.discover {
+    height: 100%;
+    width: 90%;
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+}
+
+.backDisco {
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.textureDisco {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.discover-img-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 50%;
+    flex: 1 0 35%;
+}
+
+.discover-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 3rem 3rem;
+}
+
+.disco {
+    margin-bottom: 2rem;
+}
+
+.h2disco {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    font-size: var(--size-headsection);
+    color: black;
+    height: 5rem;
+}
+
+.ctaGal {
+    flex: 1 0 25%;
+}
+
+.swiffy-slider {
+    flex: 1 0 40%;
+}
+
+.textCTAGal {
+    color: black;
+    text-align: center;
+    font-size: var(--font-cta);
+    font-weight: 500;
+    width: 50%;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 50px;
+    line-height: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .discoSize {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .discover {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .backDisco {
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .discover-img-container {
+        height: auto;
+        flex: 0 0 auto;
+    }
+
+    .discover-img {
+        margin: 1rem 1rem;
+    }
+
+    .h2disco {
+        height: auto;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .substory h5 {
+        font-size: 1.2rem;
+    }
+
+    .swiffy-slider {
+        flex: 1 0 100%;
+    }
+
+    .textCTAGal {
+        font-size: 1rem;
+        width: 100%;
+        margin: 1rem auto;
+    }
+}
+
+
+/**************************** CTA HOW TO COME ***********************/
+
+.howToCome {
+    background-color: var(--footer-color);
+    padding: 2rem 0rem;
+}
+
+.ctaHowToCome {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textCtaHow {
+    color: white;
+    text-align: center;
+    font-size: var(--font-cta);
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 50px;
+}

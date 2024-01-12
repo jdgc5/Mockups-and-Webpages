@@ -1,0 +1,738 @@
+/*************HERO********************/
+
+.backHero{
+    height: 70vh;
+    width: 100%;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: url(../Fotos/HowCome/flight.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    display: flex;
+    margin-top: 0;
+    margin-left: 2rem;
+    width: clamp(170px, 18.519vw, 250px);
+    height: clamp(100px, 37.037vw, 180px);
+}
+
+.logo{
+    background-image: url(../Fotos/logo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+}
+
+.heroMessage{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 0%;
+    margin-top: 13rem;
+    margin-left: 5rem;
+}
+
+.heroMessage h1 {
+    text-transform: uppercase;
+    height: 100%;
+    font-family: var(--heading-font);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: clamp(3.2rem, 6vw, 3.8rem);
+    font-weight: bold;
+}
+
+.giant {
+    font-size: clamp(3rem, 5vw, 4rem);
+}
+
+.nav {    
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+    position: absolute;
+    top:38%;
+    right: 5%;
+}
+
+.nav ul li a{
+
+    color: black;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    text-transform: uppercase; 
+    transition: all 70ms ease-in;
+}
+
+.nav ul li a:hover,
+.nav ul li a:focus {
+    border-bottom: 2px solid rgb(89, 85, 85);
+    color: rgb(89, 85, 85);
+}
+
+.ta {
+    text-align: center;
+    align-self: center !important;
+}
+
+.w80 {
+    width: 80%;
+    height: 100%;
+}
+
+.ma{
+    margin: 0 auto;
+}
+
+
+/********************************* SECTION 1 *******************************/
+
+.container-flight {
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    
+}
+
+.flightTexture{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: linear-gradient(to bottom left, rgba(66, 160, 219, 0.95) 0%, rgba(66, 160, 219, 0.95) 50.1%, white 50.1%, white 100%);   
+}
+
+.flight {
+    height: 100%;
+    width: 100%;
+}
+
+.flight-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 15rem;
+}
+
+.h2sections{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    font-size: var(--size-headsection);
+    color : white;
+    height: 5rem;
+}
+
+.substory h5{
+    color: var(--subtitle-color);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    margin-left: 13rem;
+    position: relative;
+}
+
+.borderbot{
+    position: relative;
+}
+
+.borderbot::after{
+    content: "";
+    position: absolute;
+    width: 25rem;
+    height: 2px;
+    background-color: var(--subtitle-color);
+    bottom:-45%;
+    left:-35%;
+    z-index: 555; 
+}
+
+.historyInf{
+    display: flex;
+    justify-content: stretch;
+    align-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.textoHistory{
+    margin-top: 2rem;
+    flex: 4 1 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+    color:white;
+    font-size: 1.3rem;
+}
+
+.text {
+    width: 80%;
+}
+
+.pHistoryContainer{
+    flex: 6 1 60%;
+    height: 70%;
+}
+
+.fotoHistory{
+    height: 1000px;
+    width: 1000px;
+    background-image: url(../Fotos/HowCome/flightIndia.jpg);
+    left : 5%;
+    top : 12%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.fotoHistory2{
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    background-image: url(../Fotos/Culture/7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: -20%;
+    right: -45%;
+}
+
+.titulo {
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.titulo::before{
+    content: "";
+    border-top: 2px solid var(--subtitle-color); 
+    width: 15%; 
+    position: absolute;
+    top: 50%; 
+    left: 16%; 
+    transform: translateY(-50%); 
+    z-index: 5;
+}
+.titulo::after{
+    content: "";
+    border-top: 2px solid var(--subtitle-color); 
+    width: 15%; 
+    position: absolute;
+    top: 50%; 
+    right: 16%; 
+    transform: translateY(-50%); 
+    z-index: 5;
+}
+
+.containerMap{
+    height: 100vh;
+    flex : 1 0 50%;
+    margin-top: 2rem;
+}
+
+.containerMapIndia{
+    height: 60vh;
+    flex : 1 0 50%;
+    margin-top: 10rem;
+}
+
+.mapToIndia {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mapToArrive {
+    background-image: url(../Fotos/HowCome/AI001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+/**********************CTA************************/
+
+.baseCTA{
+    margin-top: 10rem;
+    width: 100%;
+    height: 115vh;
+}
+
+.baseCTA1{  
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.textureDisco {
+    background-image: url(../Fotos/Texture/preview.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.ctaTexture {
+    background-image: url(../Fotos/Texture/preview.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.dirCTACont {
+    background-image: linear-gradient(to right top, rgba(244, 232, 145, 0.8), rgba(241, 230, 148, 0.8), rgba(237, 227, 151, 0.8), rgba(234, 225, 153, 0.8), rgba(231, 222, 156, 0.8));
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    margin: 0 auto;
+}
+
+.dirColor{
+    background-color: #db2b2b;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    margin: 0 auto;
+}
+
+.cuadrado {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.CTARout{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cuadrado2 {
+    width: 100%;
+    height: 60%;
+    outline: 2px solid white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.textCTA {
+    color: white;
+    text-align: center;
+    font-size: var(--font-cta);
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 50px; 
+    display: flex;
+    justify-content: center;
+}
+
+.ctaGalery {
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    padding: 18px 0px;
+    width: 180px;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    border: 1px solid rgba(0, 0, 0, 0.85);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-left: auto;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    color:black;
+    flex: 1 0 30%;
+}
+
+.ml3{
+    margin-left: 3rem;
+}
+
+.button:hover,
+.button:focus{
+    background-color: white;
+}
+
+.directions{
+    margin-right: 3rem;
+}
+
+.directions:first-child{
+    font-weight: 500;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: var(--font-family);
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+/***************************** SECTION 2 ************************/
+
+.shipTexture{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: linear-gradient(to bottom right, rgba(219,66,66, 0.95) 0%, rgba(219,66,66, 0.95) 50.1%, white 50.1%, white 100%);   
+}
+
+.shipInf{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    align-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.fotoShip{
+    height: 1000px;
+    width: 1000px;
+    background-image: url(../Fotos/HowCome/Cordelia-Cruises.jpg);
+    right : 2%;
+    top : 0%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.fotoShip2{
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    background-image: url(../Fotos/Culture/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: -20%;
+    left : -50%;
+}
+
+.mapShipToArrive {
+    background-image: url(../Fotos/HowCome/india-map-sea-ports.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.suggestionsShip{
+    display: flex;
+}
+
+.ports-title{
+    margin-bottom: 25px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.ports-curiosities{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.portTextTitle{
+    display: flex;
+    flex-direction: column;
+    flex : 1 0 50%;
+    color: black;
+}
+
+.ports-text span:not(.bold-text){
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.ports-text {
+    font-size: 1.4rem;
+}
+
+.ports-text{
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+/************* CAR *****************/
+
+.fotoCar{
+    height: 1000px;
+    width: 1000px;
+    background-image: url(../Fotos/HowCome/car-road-trips-india.jpg);
+    left : 2%;
+    top : 0%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.fotoCar2{
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    background-image: url(../Fotos/Culture/Ganesh.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: -20%;
+    right: -45%;
+}
+
+
+/******************* SAFE MESSAGE ******************************/
+
+.logo-highlight {
+    background-color: var(--footer-color);
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-highlight__title{
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.logo-highlight .wrap {
+    max-width: 780px
+}
+
+.logo-highlight .logo-grid {
+    --logo-size: 40px;
+    margin: 0
+}
+
+.logo-highlight .logo-grid__logo {
+    max-width: none
+}
+
+.logo-highlight .logo-grid__img {
+    max-height: 40px;
+    opacity: .4
+}
+
+@media (max-width:768px)  {
+    .memberIndia{
+        width: 90%;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .heroMessage {
+        position: absolute;
+        bottom: 20%;
+        width: 100%;
+        margin-left: 0rem;
+        margin-top: 18rem;
+    }
+    .flightTexture{
+        background: rgba(66, 160, 219, 0.95);
+    }
+    .shipTexture{
+        background: rgba(219,66,66, 0.95);
+    }
+    .nav{
+        top:8%;
+        right:30%;
+    }
+    .fotoHistory{
+        position:unset;
+        background-size: cover;
+        height: 250px;
+        width: 450px;
+    }
+    .fotoHistory2{
+        position:inherit;
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+    }
+    .historyInf{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: auto;
+    }
+    .borderbot {
+        display: block;
+        text-align: left;
+    }
+    .substory h5{
+        margin-left: 0rem;
+    }
+
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .borderbot::after{
+        width: 14rem;
+        left : 0%;
+        bottom : -7px;
+    }
+    .backHero{
+        height: 50vh;
+    }
+    .logo {
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .fotoHistory2{
+        display: none;
+    }
+    .containerMapIndia{
+        margin-top: 3rem;
+    }
+    .cuadrado {
+        width: 90%;
+    }
+    .textCTA{
+        flex: 1 0 50%;
+        margin-left: 2rem;
+    }
+    .directions{
+        flex: 1 0 50%;
+    }
+    .fotoShip{
+        position: unset;
+        height: 250px;
+        width: 450px;
+    }
+    .fotoShip2{
+        display: none;
+    }
+    .fotoCar{
+        position: unset;
+        height: 250px;
+        width: 450px;
+    }
+    .fotoCar2{
+        display: none;
+    }
+    .mt9{
+        margin-top: 0rem;
+    }
+    .textoHistory{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .shipInf{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    .container-flight{
+        height:auto;
+    }
+    .right {
+        text-align: left;
+    }
+    .baseCTA{
+        margin-top:auto;
+    }
+    .ports-curiosities{
+        flex-direction: column;
+    }
+    .containerMap{
+        width: 100%;
+    }
+    .mapShipToArrive{
+        background-size: cover;
+    }
+    .portTextTitle{
+        margin-top: 2rem;
+    }
+    .section3{
+        margin-top: 10rem;
+        
+    }
+    .baseCTA{
+        height: 160vh;
+    }
+    .sec3{
+        padding-top: 3rem;
+    }
+
+}
+

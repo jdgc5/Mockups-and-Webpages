@@ -1,0 +1,201 @@
+/***********************CTAAIR********************/
+
+.ctaAerlines {
+    height: 20vh;
+    width: 100%;
+    background-color: var(--footer-color);
+}
+.publiAerlines {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid white;
+    
+}
+.publi {
+    flex: 1 1 33.3333333334%;
+}
+
+.publi1{
+    background-image: url(../Fotos/Texture/SVG/Recurso\ 7.svg);
+    height: 80px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.publi2{
+    background-image: url(../Fotos/Texture/SVG/Recurso\ 12.svg);
+    height: 60px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.publi3{
+    background-image: url(../Fotos/Texture/SVG/Recurso\ 11.svg);
+    height: 40px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ------------------------ FOOTER ------------------------*/
+footer{
+    background-color:var(--footer-color);  
+}
+
+.footer-body{
+    padding: 2em 1.5em;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: min(15vw, 30px);
+}
+
+.footer-content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-logo-container{
+    width: 100%;
+}
+
+.footer-logo{
+    height: 200px;
+    width: 250px;
+    background-image: url(../Fotos/logo-1.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.footer-title{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color : white;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    text-align: left;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.footer-content a:hover{
+    color: var(--secondary-color);
+}
+
+.footer-newsletter form{
+    display: flex;
+}
+
+.footer-newsletter form input[type="text"]{
+    width: 100%;
+    border: 0;
+    background-color: white;
+    padding: 1em;
+    color: white;
+}
+
+.footer-newsletter form input[type="text"]:focus::placeholder{
+    visibility: hidden;
+}
+
+.footer-newsletter form input[type="text"]::placeholder{
+    color: black;
+    opacity: 0.6;
+}
+
+.footer-newsletter form input[type="submit"]{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.footer-newsletter form input[type="submit"]:hover{
+    background-color: var(--subtitle-color);
+}
+
+.footer-down-bar{
+    padding: 1.5em 1.2em;  
+    background-color: rgb(39, 38, 38);
+}
+
+.footer-down-bar > div{
+    max-width: 1500px;
+    margin: auto;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    flex: 2;
+    color: white;
+}
+
+.footer-social-media{
+    font-size: 1.5em;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.footer-social-media i{
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.footer-social-media i:hover{
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.fa{
+    padding-left: 25px;
+}
+
+@media (max-width: 768px){
+    .footer-content-wrapper{
+        flex-wrap: nowrap;
+    }
+
+    .footer-newsletter{
+        display: none;
+    }
+}
