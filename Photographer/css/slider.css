@@ -1,0 +1,317 @@
+.route-title{
+    padding: 1em 0;
+    width: 100%;
+    background-color: var(--main-background);
+    text-align: center;
+}
+
+.route-title p{
+    color: black;
+    font-weight: 500;
+    width: 85%;
+    margin: auto;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.route-days-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    flex-direction: column;
+}
+
+.route-slider-filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.timeline {
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.timeline .swiper-container {
+    cursor: grab;
+    height: 50vh;
+    min-height: 420px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline .swiper-container:active {
+    cursor:move
+}
+
+.timeline .swiper-wrapper {
+    transition: all 1s ease;
+}
+
+.timeline .swiper-slide {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.timeline .swiper-slide-content {
+    position: absolute;
+    z-index: 9999;
+    text-align: left;
+    width: 90%;
+    max-width: 700px;
+    top: 10%;
+}
+
+.timeline .swiper-slide .timeline-year {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.timeline .swiper-slide .timeline-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0 0 20px;
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+    transition: all 1s ease;
+}
+
+.timeline .swiper-slide .timeline-text {
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+    transition: all 1s ease;
+}
+
+.timeline .swiper-slide-active .timeline-year {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all 1s ease 0.3s;
+}
+
+.timeline .swiper-slide-active .timeline-title {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all 1s ease 0.3s;
+}
+
+.timeline .swiper-slide-active .timeline-text {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all 1s ease 0.3s;
+}
+
+.timeline .swiper-pagination {
+    right: 15% !important;
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1em;
+    z-index: 1;
+}
+
+.timeline .swiper-pagination::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Timeline */
+.timeline .swiper-pagination-bullet {
+    font-weight: 500;
+    width: auto;
+    height: auto;
+    text-align: left;
+    opacity: 1;
+    background: transparent;
+    color: var(--secondary-color);
+    margin: 5px 0 !important;
+    position: relative;
+}
+
+.timeline .swiper-pagination-bullet::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -32.5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #d4a024;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: all 1s ease;
+}
+
+.timeline .swiper-pagination-bullet-active::before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.timeline .swiper-button-next,
+.timeline .swiper-button-prev {
+    top: unset;
+    bottom: 10%;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 1s ease;
+    background-color: transparent;
+}
+
+.timeline .swiper-button-prev {
+    left: 6%;
+    background-image: url(../img/back_arrow.svg); 
+    background-color: white; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+
+.timeline .swiper-button-next {
+    right: 6%;
+    background-image: url(../img/forward_arrow.svg);
+    background-color: white; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    .timeline .swiper-container {
+        min-height: 600px;
+    }
+
+    .timeline .swiper-slide-content {
+        position: static;
+        z-index: 9999;
+        text-align: left;
+        width: 85%;
+        max-width: 700px;
+        top: 10%;
+    }
+
+    .timeline .swiper-slide::after {
+        left: 20%;
+        bottom: -8%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .timeline .swiper-pagination {
+        top: 40px;
+        right: unset !important;
+        display: flex;
+        gap: 60px;
+    }
+
+    .timeline .swiper-pagination-bullet {
+        transition: all 1s ease;
+        height: 44px;
+    }
+
+    .timeline .swiper-pagination-bullet-active {
+        
+        transform: scale(1.2);
+        color: var(--secondary-color);
+    }
+
+    .timeline .swiper-pagination::before {
+        content: unset;
+    }
+
+    .timeline .swiper-pagination-bullet::before {
+        content: unset;
+    }
+
+    .timeline .swiper-pagination::after {
+        content: "";
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .timeline .swiper-pagination-bullet-active::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -6%;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: var(--secondary-color);
+        transition: all 1s ease;
+        animation: shining 2s infinite;
+    }
+
+    @keyframes shining {
+        0%,100%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0.2;
+        }
+    }
+
+    .timeline .swiper-button-prev:hover {
+        transform:scale(1.05);
+    }
+
+    .timeline .swiper-button-next:hover {
+        transform:scale(1.05);
+    }
+}
